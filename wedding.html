@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Приглашение на свадьбу Александра и Натальи</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/102ca79a2f.js" crossorigin="anonymous"></script>
+    <style>
+        @font-face {
+            font-family: 'Caravan';
+            src: url('Caravan.eot');
+            src: local('Caravan'),
+                url('Caravan.eot?#iefix') format('embedded-opentype'),
+                url('Caravan.woff2') format('woff2'),
+                url('Caravan.woff') format('woff'),
+                url('Caravan.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Palladio';
+            src: url('palladiourw_regita.otf');
+            font-style: italic;
+            font-weight: 400;
+        }
+
+        @media screen and (max-width: 1280px) {
+            div.beginning {
+                width: 1200px;
+            }
+
+            div.info {
+                width: 1200px;
+            }
+
+            div.navigation {
+                width: 1200px;
+            }
+        }
+
+        @media screen and (max-width: 1140px) {
+            div.beginning {
+                width: 1024px;
+            }
+
+            div.info {
+                width: 1024px;
+            }
+
+            div.navigation {
+                width: 1024px;
+            } 
+        }
+
+        @media screen and (max-width: 992px) {
+            div.beginning {
+                width: 970px;
+            }
+
+            div.info {
+                width: 970px;
+            }
+
+            div.navigation {
+                width: 970px;
+            }
+        }
+
+        body {
+            background-image: url(bg1.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        .beginning {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            position: relative;
+        }
+
+        .beginning p {
+            font-family: "Caravan";
+            text-align: center;
+            font-size: 140px;
+            position: absolute;
+            filter: opacity(100%);
+            margin-bottom: 50px;
+            font-style: italic;
+            font-weight: lighter;
+        }
+
+        .beginning img {
+            position: absolute;
+            filter: opacity(70%);
+        }
+
+        .beginning .symphony {
+            font-family: "Palladio";
+            font-size: 200%;
+            transform: translateY(470px)
+        }
+
+        .love {
+            font-family: "Palladio";
+            color: rgb(140, 0, 0);
+
+        }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            height: fit-content;
+            transform: translateY(700px);
+            text-align: center;
+        }
+
+        .info h1 {
+            font-family: "Caravan";
+            font-size: 140px;
+            margin-bottom: 50px;
+            font-style: italic;
+            font-weight: lighter;
+        }
+
+        .info p {
+            font-family: "Palladio";
+            font-size: 200%;
+            font-size: x-large;
+        }
+
+        .info img {
+            width: 500px;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .navigation {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            height: fit-content;
+            transform: translateY(700px);
+            text-align: center;
+        }
+
+        .navigation h1 {
+            font-family: "Caravan";
+            font-size: 140px;
+            margin-top: 20px;
+            margin-bottom: 50px;
+            font-style: italic;
+            font-weight: lighter;
+        }
+
+        .navigation p {
+            font-family: "Palladio";
+            font-size: 200%;
+            font-size: x-large;
+            margin-top: 20px;
+        }
+
+        .navigation video {
+            width: 500px;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            display: block;
+            margin: 10px;
+
+        }
+
+        .navigation a, .navigation a.active {
+            font-family: "Palladio";
+            font-size: 200%;
+            font-size: x-large;
+            margin-top: 20px;
+            text-decoration: none;
+            border-width: 2px;
+            border-color: black;
+            border: solid;
+            padding: 10px;
+            color:black;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="beginning">
+        <img src="https://optim.tildacdn.com/tild3636-3432-4232-a261-633138386234/-/format/webp/2_.png"
+            style="width: 785px; height: 785px; display: block; filter:opacity(70%); transform: translateY(-100px)">
+        <p style="transform: translateY(-100px);">Александр<br> и <br> Наталья</p>
+        <img src="https://optim.tildacdn.com/tild3162-3265-4731-b932-616536653364/-/resize/926x/-/format/webp/photo.png"
+            style="width: 463px; height: 463px; align-items:last baseline; transform: translateY(380px);">
+        <p class="symphony">включи нашу симфонию <span class="love">любви</span></p>
+        <img id="music"
+            src="https://optim.tildacdn.com/tild6631-3734-4933-b937-363133616635/-/cover/120x120/center/center/-/format/webp/photo.png"
+            data-url="muzika.mp3" style="width: 60px; height: 60px; transform: translateY(597px) translateX(5px)">
+        <audio id="myaudio">
+            <source src="muzika.mp3">
+        </audio>
+    </div>
+    <div class="info">
+        <h1>Дорогие гости!</h1>
+        <p>В нашей жизни произойдет очень <br> важное событие — наша свадьба! <br> Позвольте пригласить Вас разделить
+            <br> с нами радость этого дня. <br> Подарите свою поддержку и добрые <br> пожелания, а мы в свою очередь,
+            <br> поделимся частичкой нашего счастья
+        </p>
+        <img src="calendar.png">
+    </div>
+    <div class="navigation">
+        <h1>Место проведения</h1>
+        <p>Ресторан "Шафран"<br> ЦПКиО им. Ю. А. Гагарина <br> Комунны, 120</p>
+        <video controls="controls">
+            <source src="videva.MP4">
+        </video>
+        <a href="https://2gis.ru/chelyabinsk/firm/2111590606323661/61.366135%2C55.165745?m=61.366332%2C55.165973%2F18.08">Посмотреть на карте</a>
+    </div>
+    <script>
+        document.getElementById("music").onclick = function () {
+            var myaudio = document.getElementById("myaudio");
+            if (myaudio.paused == true) {
+                document.getElementById("myaudio").play();
+            }
+            else if (myaudio.paused == false) {
+                document.getElementById("myaudio").pause();
+            }
+        }
+    </script>
+</body>
+
+</html>
