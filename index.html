@@ -10,8 +10,36 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/102ca79a2f.js" crossorigin="anonymous"></script>
     <style>
+        .philosopher-regular {
+            font-family: "Philosopher", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .philosopher-bold {
+            font-family: "Philosopher", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        .philosopher-regular-italic {
+            font-family: "Philosopher", sans-serif;
+            font-weight: 400;
+            font-style: italic;
+        }
+
+        .philosopher-bold-italic {
+            font-family: "Philosopher", sans-serif;
+            font-weight: 700;
+            font-style: italic;
+        }
+
         @font-face {
             font-family: 'Caravan';
             src: url('Caravan.eot');
@@ -123,13 +151,13 @@
         }
 
         .beginning .symphony {
-            font-family: "Palladio";
+            font-family: "Philosopher";
             font-size: 200%;
             transform: translateY(470px);
         }
 
         .love {
-            font-family: "Palladio";
+            font-family: "Philosopher";
             color: rgb(140, 0, 0);
 
         }
@@ -158,10 +186,11 @@
         }
 
         .info p {
-            font-family: "Palladio";
+            font-family: "Philosopher";
             font-size: 200%;
             font-size: x-large;
             margin-left: 15px;
+            font-style: italic;
         }
 
         .info img {
@@ -197,9 +226,10 @@
         }
 
         .navigation p {
-            font-family: "Palladio";
+            font-family: "Philosopher";
             font-size: 200%;
             font-size: x-large;
+            font-style: italic;
             margin-top: 20px;
         }
 
@@ -211,7 +241,7 @@
 
         .navigation a,
         .navigation a.active {
-            font-family: "Palladio";
+            font-family: "Philosopher";
             font-size: 200%;
             font-size: x-large;
             margin-top: 20px;
@@ -222,6 +252,7 @@
             padding: 10px;
             color: black;
             margin-bottom: 30px;
+            font-style: italic;
         }
 
         .time {
@@ -254,6 +285,38 @@
             margin-top: 0;
             font-size: 140px;
         }
+
+        .ending {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            height: fit-content;
+            transform: translateY(700px);
+            text-align: center;
+            margin-bottom: 100px;
+            margin-inline: auto;
+            inset-inline: 0;
+            inset-block-start: 50%;
+        }
+
+        .ending h1 {
+            font-family: "Caravan";
+            font-size: 100px;
+            margin-top: 20px;
+            margin-bottom: 70px;
+            font-style: italic;
+            font-weight: lighter;
+            line-height: 75%;
+        }
+
+        .love2 {
+            font-family: "Caravan";
+            color: rgb(140, 0, 0);
+            margin-top: 0;
+            font-size: 100px;
+        }
     </style>
 </head>
 
@@ -274,7 +337,8 @@
     </div>
     <div class="info">
         <h1>Дорогие гости!</h1>
-        <p>В нашей жизни произойдет очень важное <br> событие — наша свадьба! <br> Позвольте пригласить Вас разделить <br>
+        <p>В нашей жизни произойдет очень важное <br> событие — наша свадьба! <br> Позвольте пригласить Вас разделить
+            <br>
             с нами радость этого дня. <br> Подарите свою поддержку и добрые <br> пожелания, а мы в свою очередь,
             <br> поделимся частичкой нашего счастья
         </p>
@@ -293,6 +357,9 @@
         <h1>Ждем вас <span class="love1">через...</span></h1>
         <script src="//megatimer.ru/get/fbeb15bf21ebec213444f1a0a9e8d8fd.js"></script>
     </div>
+    <div class="ending">
+        <h1><span class="love2">С любовью,</span> <br> Александр и Наталья</h1>
+    </div>
     <script>
         document.getElementById("music").onclick = function () {
             var myaudio = document.getElementById("myaudio");
@@ -305,4 +372,5 @@
         }
     </script>
 </body>
+
 </html>
