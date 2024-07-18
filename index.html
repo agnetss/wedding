@@ -32,16 +32,21 @@
 
         @media screen and (max-width: 1280px) {
             div.beginning {
-                width: 1200px;
+                width: 1280px;
             }
 
             div.info {
-                width: 1200px;
+                width: 1280px;
             }
 
             div.navigation {
-                width: 1200px;
+                width: 1280px;
             }
+
+            div.time {
+                width: 1280px;
+            }
+
         }
 
         @media screen and (max-width: 1140px) {
@@ -56,20 +61,30 @@
             div.navigation {
                 width: 1024px;
             } 
+
+            div.time {
+                width: 1024px;
+            } 
+
         }
 
         @media screen and (max-width: 992px) {
             div.beginning {
-                width: 970px;
+                width: 785px;
             }
 
             div.info {
-                width: 970px;
+                width: 785px;
             }
 
             div.navigation {
-                width: 970px;
+                width: 785px;
             }
+
+            div.time {
+                width: 785px;
+            }
+
         }
 
         body {
@@ -146,7 +161,7 @@
             height: auto;
             border-radius: 10px;
             display: block;
-            margin: 0 auto;
+            margin: 0;
         }
 
         .navigation {
@@ -158,6 +173,7 @@
             height: fit-content;
             transform: translateY(700px);
             text-align: center;
+
         }
 
         .navigation h1 {
@@ -180,7 +196,6 @@
             border-radius: 10px;
             display: block;
             margin: 10px;
-
         }
 
         .navigation a, .navigation a.active {
@@ -196,8 +211,38 @@
             color:black;
             margin-bottom: 30px;
         }
+
+        .time {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            height: fit-content;
+            transform: translateY(700px);
+            text-align: center;
+            margin-bottom: 100px;
+        }
+
+        .time h1 {
+            font-family: "Caravan";
+            font-size: 140px;
+            margin-top: 20px;
+            margin-bottom: 70px;
+            font-style: italic;
+            font-weight: lighter;
+        }
+
+        .love1 {
+            font-family: "Caravan";
+            color: rgb(140, 0, 0);
+            margin-top: 0;
+            font-size: 140px;
+        }
+
     </style>
 </head>
+
 <body>
     <div class="beginning">
         <img src="https://optim.tildacdn.com/tild3636-3432-4232-a261-633138386234/-/format/webp/2_.png"
@@ -227,6 +272,10 @@
         <iframe src="https://drive.google.com/file/d/19h4ta8d75TFPXwi7MX1p5iaaiyO7k6pt/preview" width="640" height="480" allow="autoplay"></iframe>
         <a href="https://2gis.ru/chelyabinsk/firm/2111590606323661/61.366135%2C55.165745?m=61.366332%2C55.165973%2F18.08">Посмотреть на карте</a>
     </div>
+    <div class="time">
+        <h1>Ждем вас <span class="love1">через...</span></h1>
+        <script src="//megatimer.ru/get/fbeb15bf21ebec213444f1a0a9e8d8fd.js"></script>
+    </div>
     <script>
         document.getElementById("music").onclick = function () {
             var myaudio = document.getElementById("myaudio");
@@ -239,5 +288,4 @@
         }
     </script>
 </body>
-
 </html>
